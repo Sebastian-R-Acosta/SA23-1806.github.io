@@ -36,11 +36,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // Escuchar el clic en el botón
+    // ClicK en el botón
     toggleButton.addEventListener('click', toggleTheme);
 
-    // Inicializar EmailJS (reemplaza con tu User ID)
-    emailjs.init('TU_USER_ID'); // Cambia esto por tu Public Key de EmailJS
 
     // Manejar el envío del formulario
     const contactForm = document.getElementById('contact-form');
@@ -60,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Función sendMail (opcional, si quieres mantenerla como alternativa)
+    // Función sendMail
     window.sendMail = function() {
         const email = document.getElementById("email").value;
         if (email) {
